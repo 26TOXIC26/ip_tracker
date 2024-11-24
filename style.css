@@ -50,6 +50,7 @@ body
 
 #search input:focus
 {
+	outline: none;
 	border: none;
 }
 
@@ -93,6 +94,23 @@ body
 	color: #000;
 	background-color: white;
 	z-index: 10;
+}
+
+#info div
+{
+	width: 25%;
+	height: 60%;
+	border-left: 1px solid #5c5c5c;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+#info div:first-child
+{
+	border-left: none;
 }
 
 #map
