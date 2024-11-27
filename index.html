@@ -16,7 +16,7 @@
 	<div id="header">
 		<h1 id="title">IP TRACKER</h1>
 		<div id="search">
-			<input type="text" id="ip" placeholder="Search for any IP address or domain">
+			<input type="text" id="ip" placeholder="Search for any IP address or domain" onkeypress="if(event.key === 'Enter') take_ip()">
 			<button id="search" onclick="take_ip()"><img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/forward.png" alt="forward"/></button>
 		</div>
 	</div>
@@ -37,6 +37,14 @@
 			<p>ISP</p>
 			<h2 id="isp-value"></h2>
 		</div>
+		<button id="more-info" onclick="show_more_info()"><img width="32" height="32" src="https://img.icons8.com/ios/50/FFFFFF/expand-arrow--v1.png" alt="expand-arrow--v1"/></button>
+	</div>
+	<div id="hidden-info">
+		<p>currency: <span id="currency"></span></p>
+		<p>languages: <span id="languages"></span></p>
+		<p>calling code: <span id="calling-code"></span></p>
+		<p>country: <span id="country"></span></p>
+		<p>capital: <span id="capital"></span></p>
 	</div>
 	<div id="map"></div>
 	<script src="script.js"></script>
